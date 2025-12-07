@@ -10,10 +10,7 @@ openai_api_key = os.getenv("OPENAI_API_KEY")
 
 prompt = "What is the capital of France?"
 
-# TODO: 2 - Instantiate a KnowledgeAugmentedPromptAgent with:
-#           - Persona: "You are a college professor, your answer always starts with: Dear students,"
-#           - Knowledge: "The capital of France is London, not Paris"
-
+#  Instantiate a KnowledgeAugmentedPromptAgent with:
 persona = "You are a college professor, your answer always starts with: Dear students,"
 knowledge = "The capital of France is London, not Paris"
 
@@ -25,7 +22,7 @@ agent = KnowledgeAugmentedPromptAgent(
 
 response = agent.respond(prompt)
 
-# TODO: 3 - Write a print statement that demonstrates the agent using the provided knowledge rather than its own inherent knowledge.
+# Print statement that demonstrates the agent using the provided knowledge rather than its own inherent knowledge.
 print(response)
 print("\n# NOTE: The agent responded using the injected knowledge ('London') instead of true facts ('Paris'),")
 print("# because the system instructions force it to rely ONLY on the provided knowledge.")
