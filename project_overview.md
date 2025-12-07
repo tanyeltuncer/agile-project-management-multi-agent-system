@@ -1,5 +1,4 @@
-**What Has Been Built**
-1. A Reusable Agentic Toolkit
+**What Has Been Built: A Reusable Agentic Toolkit**
 
 A modular Python package (workflow_agents) has been developed, featuring seven specialized AI agent classes that form the foundation of more advanced workflows:
 
