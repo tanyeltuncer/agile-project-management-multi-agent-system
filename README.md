@@ -40,16 +40,6 @@ A central orchestration script, agentic_workflow.py, implements the end-to-end w
 - Simulates a Development Engineer team that produces evaluated engineering tasks
 - Outputs a complete, well-structured project plan for the Email Router, demonstrating the workflow’s reliability, scalability, and clarity.
 
-**Deliverables Produced**
 
-Phase 1
-
-- Fully implemented reusable agent library (workflow_agents/base_agents.py)
-- Seven test scripts validating each agent
-- Executed test outputs (screenshots or text logs)
-
-**Phase 2**
-
-- Completed agentic_workflow.py script implementing the full project management workflow for the Email Router pilot
 
 Developed during the Nanodegree programm "Agentic AI" of Udacity
