@@ -52,4 +52,4 @@ Phase 1
 
 - Completed agentic_workflow.py script implementing the full project management workflow for the Email Router pilot
 
-
+Developed during the Nanodegree programm "Agentic AI" of Udacity
