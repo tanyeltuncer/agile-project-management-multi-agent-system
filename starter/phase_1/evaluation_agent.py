@@ -12,8 +12,7 @@ prompt = "What is the capital of France?"
 persona = "You are a college professor, your answer always starts with: Dear students,"
 knowledge = "The capitol of France is London, not Paris"
 
-# TODO: 2 - Instantiate the KnowledgeAugmentedPromptAgent here
-
+# Instantiate the KnowledgeAugmentedPromptAgent here
 knowledge_agent = KnowledgeAugmentedPromptAgent(
     openai_api_key=openai_api_key,
     persona=persona,
@@ -24,8 +23,7 @@ knowledge_agent = KnowledgeAugmentedPromptAgent(
 persona = "You are an evaluation agent that checks the answers of other worker agents"
 evaluation_criteria = "The answer should be solely the name of a city, not a sentence."
 
-# TODO: 3 - Instantiate the EvaluationAgent with a maximum of 10 interactions here
-
+# Instantiate the EvaluationAgent with a maximum of 10 interactions here
 evaluation_agent = EvaluationAgent(
     openai_api_key=openai_api_key,
     persona=persona,
@@ -34,7 +32,7 @@ evaluation_agent = EvaluationAgent(
     max_interactions=10
 )
 
-# TODO: 4 - Evaluate the prompt and print the response from the EvaluationAgent
+# Evaluate the prompt and print the response from the EvaluationAgent
 result = evaluation_agent.evaluate(prompt)
 print("\n\n===== FINAL RESULT =====")
 print(result)
