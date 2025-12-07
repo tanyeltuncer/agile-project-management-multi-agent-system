@@ -1,4 +1,4 @@
-# TODO: 1 - Import all required libraries, including the ActionPlanningAgent
+# Import all required libraries, including the ActionPlanningAgent
 import os
 from dotenv import load_dotenv
 from openai import OpenAI
@@ -9,7 +9,6 @@ load_dotenv()
 
 # Define the parameters for the agent
 openai_api_key = os.getenv("OPENAI_API_KEY")
-
 
 client = OpenAI(
     base_url="https://openai.vocareum.com/v1",
@@ -44,13 +43,13 @@ knowledge = """
 7. Peel and serve
 """
 
-# TODO: 3 - Instantiate the ActionPlanningAgent, passing the openai_api_key and the knowledge variable
+#  Instantiate the ActionPlanningAgent, passing the openai_api_key and the knowledge variable
 agent = ActionPlanningAgent(
     openai_api_key=openai_api_key,
     knowledge=knowledge
 )
 
-# TODO: 4 - Print the agent's response to the following prompt: "One morning I wanted to have scrambled eggs"
+# Print the agent's response
 response = agent.extract_steps_from_prompt("One morning I wanted to have scrambled eggs")
 
 print("\n=== Extracted Steps ===")
